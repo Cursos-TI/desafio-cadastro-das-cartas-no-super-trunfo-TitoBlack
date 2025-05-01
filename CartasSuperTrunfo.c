@@ -65,7 +65,7 @@ int main() {
     printf("O total de pontos turísticos é de %d\n\n", pontos);
 
     densiPopulacao1 = (populacao / area); //calculando a densidade populacional.
-    pibcapita1 = (pib / (float)populacao); //calculando o PIB per Capita.
+    pibcapita1 = (pib *1000000000.0) / (float)populacao; //calculando o PIB per Capita.
 
     printf("Os dados foram salvos, obrigado por enviar.\nAgora vamos preencher os dados da proxima carta antes de concluir!\n\n");
 
@@ -113,7 +113,7 @@ int main() {
     printf("O total de pontos turísticos é de %d\n", pontos2);
 
     densiPopulacao2 = (populacao2 / area2); //calculando a densidade populacional.
-    pibcapita2 = (pib2 / (float)populacao2); //calculando o PIB per Capita.
+    pibcapita2 = (pib2 *1000000000.0) / (float)populacao2; //calculando o PIB per Capita.
 
     printf("Perfeito!!!\n Estas são suas cartas, mantenha elas por perto ;D\n Até a próxima!\n\n");
 
