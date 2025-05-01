@@ -12,11 +12,11 @@ int main() {
     char codigoCarta [4], codigoCarta2 [4]; //Código da carta.
     char cidade [15], cidade2 [15]; //Nome da cidade.
     int populacao, populacao2; //Número de habitantes da cidade.
-    float area, area2; //Quilômetros quadrados da cidade.
-    float pib, pib2; //Produto interno e bruto da cidade.
+    double area, area2; //Quilômetros quadrados da cidade.
+    double pib, pib2; //Produto interno e bruto da cidade.
     int pontos, pontos2; //Quantidade de ponto turistico.
-    float densiPopulacao1, densiPopulacao2; //Densidade Populacional = População / área da cidade.
-    float pibcapita1, pibcapita2; //PIB per Capita = PIB / população.
+    double densiPopulacao1, densiPopulacao2; //Densidade Populacional = População / área da cidade.
+    double pibcapita1, pibcapita2; //PIB per Capita = PIB / população.
 
 
     printf("*** JOGO DO SUPER TRUNFO ***\n\n");
@@ -50,12 +50,12 @@ int main() {
     printf("A população é de %d\n", populacao);
 
     printf("Informe a área total da cidade: \n");//ÁREA DA CIDADE
-    scanf("%f", &area);
+    scanf("%lf", &area);
 
     printf("A área total é de %.2f km²\n", area);
 
     printf("Informe o produto interno bruto da cidade: \n");//PIB
-    scanf("%f", &pib);
+    scanf("%lf", &pib);
 
     printf("O PIB é de %.2f bilhões de reais\n", pib);
 
@@ -65,7 +65,7 @@ int main() {
     printf("O total de pontos turísticos é de %d\n\n", pontos);
 
     densiPopulacao1 = (populacao / area); //calculando a densidade populacional.
-    pibcapita1 = (pib *1000000000.0) / (float)populacao; //calculando o PIB per Capita.
+    pibcapita1 = (pib *1000000000.0) / populacao; //calculando o PIB per Capita.
 
     printf("Os dados foram salvos, obrigado por enviar.\nAgora vamos preencher os dados da proxima carta antes de concluir!\n\n");
 
@@ -98,12 +98,12 @@ int main() {
     printf("A população é de %d\n", populacao2);
 
     printf("Informe a área total da cidade: \n");//ÁREA DA CIDADE
-    scanf("%f", &area2);
+    scanf("%lf", &area2);
 
     printf("A área total é de %.2f km²\n", area2);
 
     printf("Informe o produto interno bruto da cidade: \n");//PIB
-    scanf("%f", &pib2);
+    scanf("%lf", &pib2);
 
     printf("O PIB é de %.2f bilhões de reais\n", pib2);
 
@@ -113,7 +113,7 @@ int main() {
     printf("O total de pontos turísticos é de %d\n", pontos2);
 
     densiPopulacao2 = (populacao2 / area2); //calculando a densidade populacional.
-    pibcapita2 = (pib2 *1000000000.0) / (float)populacao2; //calculando o PIB per Capita.
+    pibcapita2 = (pib2 *1000000000.0) / populacao2; //calculando o PIB per Capita.
 
     printf("Perfeito!!!\n Estas são suas cartas, mantenha elas por perto ;D\n Até a próxima!\n\n");
 
