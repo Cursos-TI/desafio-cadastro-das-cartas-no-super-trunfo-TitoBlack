@@ -148,7 +148,7 @@ int main() {
     printf("Super Poder: %.2f\n\n", superPoder2);
     
 
-    system("cls||clear");
+    system("cls");
 
     // Escolha do atributo para comparação
     printf("*** COMPARAÇÃO DAS CARTAS ***\n\n");
@@ -163,7 +163,7 @@ int main() {
     printf("Escolha: ");
     scanf("%d", &opcao1);
 
-    system("cls||clear");
+    system("cls");
 
     printf("*** RESULTADO ***\n");
 
